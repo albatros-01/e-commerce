@@ -1,14 +1,16 @@
 import React,{createContext, useState} from 'react'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-// import Homepage from './pages/Homepage'
+
 import Signin from './Component/Signin'
 import Signup from './Component/Signup'
-import Settingspages from './pages/Settingspages'
-import Aboutpages from './pages/Aboutpages'
+import Homepage from './Pages/Homepage'
+import Settingspages from './Pages/Settingspages'
+import Aboutpages from './Pages/Aboutpages'
 import Contactpages from './Pages/Contactpages'
 import Cart from './Component/Cart'
 import Checkout from './Component/Settingcomponent/Checkout'
 import Admindashboard from './Pages/Admindashboard'
+
 
 
 
@@ -27,8 +29,8 @@ const[admincart,setAdmincart]=useState([])
       <Router>
         <Routes>        
           <Route path="/" element={<Signin />} />
-            {/* <Route path="/homepage" element={<Homepage />} /> */}
           <Route path="/signup" element={<Signup />} />
+          <Route path="/home" element={<Homepage />} />
           <Route path="/setting" element={<Settingspages/>}></Route>
           <Route path="/about" element={<Aboutpages/>}></Route>
           <Route path="/contact" element={<Contactpages/>}></Route>

@@ -19,7 +19,7 @@ const Header = () => {
       </div>
       <div className='w-1/2  flex justify-end items-center pr-4'>
         <ul className='flex justify-between items-center'>
-          <li className='font-medium px-2 hover:underline'><Link to="/homepage">Home</Link></li>
+          <li className='font-medium px-2 hover:underline'><Link to="/home">Home</Link></li>
           <li className='font-medium px-2 hover:underline'><Link to="/about">About</Link></li>
           <li className='font-medium px-2 hover:underline'><Link to="/setting">Settings</Link></li>
           <li className='font-medium px-2 hover:underline'><Link to="/contact">Contact Us</Link></li>
