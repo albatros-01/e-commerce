@@ -26,8 +26,8 @@ const[admincart,setAdmincart]=useState([])
     <Globalstate.Provider value={{users,setUsers,cart,setCart,admincart,setAdmincart}}>
       <Router>
         <Routes>        
-          <Route path="/homepage" element={<Homepage />} />
           <Route path="/" element={<Signin />} />
+            <Route path="/homepage" element={<Homepage />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/setting" element={<Settingspages/>}></Route>
           <Route path="/about" element={<Aboutpages/>}></Route>
