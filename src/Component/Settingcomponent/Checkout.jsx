@@ -116,7 +116,7 @@ const Checkout = () => {
             onClick={() => setTog(!tog)}
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition-all"
           >
-            <Link to="/homepage">Go To Home</Link>
+            <Link to="/home">Go To Home</Link>
           </button>
         </div>
       )}

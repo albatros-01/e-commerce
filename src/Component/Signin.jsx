@@ -21,9 +21,10 @@ const Signin = () => {
 
       if(userFound){
           setMsg('Login Successfully');
-          navi('/homepage')
+          navi('/home')
       }else if('Admin1122'===userRef.current.value&&'Admin@1122'===passRef.current.value){
         setMsg('Admin login Successfully Complete')
+        navi('/admin')
       }else{
         setMsg('Invalid username or Password')
       }
@@ -87,7 +88,7 @@ const Signin = () => {
 
             <button
               type="Sumbit"
-              onClick={navi("/homepage")}
+              onClick={navi("/home")}
               className="flex justify-center items-center p-2 border-2 border-white rounded-2xl mt-3 w-24 h-10 text-center outline-none text-md font-extrabold text-white hover:bg-gray-400 transition"
             >
               Sign In
